@@ -1,37 +1,27 @@
 {
   "project_info": {
-    "project_number": "307594704965",
-    "firebase_url": "https://iot-based-project-128a9-default-rtdb.firebaseio.com",
-    "project_id": "iot-based-project-128a9",
-    "storage_bucket": "iot-based-project-128a9.appspot.com"
+    "project_number": "367629266381",
+    "firebase_url": "https://elementix-881ab-default-rtdb.firebaseio.com",
+    "project_id": "elementix-881ab",
+    "storage_bucket": "elementix-881ab.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:307594704965:android:0cf3f5acda536d889dcb2c",
+        "mobilesdk_app_id": "1:367629266381:android:6825893328f2241b0ea884",
         "android_client_info": {
           "package_name": "com.example.elementix"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "307594704965-7mlosvfkbq98349cfno7fd64aj5ln6tr.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBriWrJNZA7xbqVyhSRzxie9TS4T_qJtx8"
+          "current_key": "AIzaSyCBkfdT-Pc5yzPSU3-wxLPyAgV2SCNGcTY"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "307594704965-7mlosvfkbq98349cfno7fd64aj5ln6tr.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

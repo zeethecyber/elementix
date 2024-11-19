@@ -53,12 +53,12 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static final FirebaseOptions android = FirebaseOptions(
-    apiKey: dotenv.env['API_KEY'] ?? '',
-    appId: dotenv.env['APP_ID'] ?? '',
-    messagingSenderId: dotenv.env['MESSAGING_SENDER_ID'] ?? '',
-    projectId: dotenv.env['PROJECT_ID'] ?? '',
-    databaseURL: dotenv.env['DATABASE_URL'] ?? '',
-    storageBucket: dotenv.env['STORAGE_BUCKET'] ?? '',
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyCBkfdT-Pc5yzPSU3-wxLPyAgV2SCNGcTY',
+    appId: '1:367629266381:android:6825893328f2241b0ea884',
+    messagingSenderId: '367629266381',
+    projectId: 'elementix-881ab',
+    databaseURL: 'https://elementix-881ab-default-rtdb.firebaseio.com/',
+    storageBucket: 'elementix-881ab.firebasestorage.app',
   );
 }
