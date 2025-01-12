@@ -1,14 +1,14 @@
 {
   "project_info": {
-    "project_number": "367629266381",
-    "firebase_url": "https://elementix-881ab-default-rtdb.firebaseio.com",
-    "project_id": "elementix-881ab",
-    "storage_bucket": "elementix-881ab.firebasestorage.app"
+    "project_number": "868689923568",
+    "firebase_url": "https://iot-based-52ea9-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "iot-based-52ea9",
+    "storage_bucket": "iot-based-52ea9.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:367629266381:android:6825893328f2241b0ea884",
+        "mobilesdk_app_id": "1:868689923568:android:53474f2c2e6fcf99ff2135",
         "android_client_info": {
           "package_name": "com.example.elementix"
         }
@@ -16,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCBkfdT-Pc5yzPSU3-wxLPyAgV2SCNGcTY"
+          "current_key": "AIzaSyBzYYpZxRZfFK0NWzNLmNWI3bjODrHcEWM"
         }
       ],
       "services": {

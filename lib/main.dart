@@ -15,8 +15,8 @@ Future<void> main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   // Initialize the locale data for 'en_PK'
-  await initializeDateFormatting('en_PK');
-  await dotenv.load(fileName: ".env");
+  // await initializeDateFormatting('en_PK');
+  // await dotenv.load(fileName: ".env");
 
   // Initialize the Get Storage
   await GetStorage.init();

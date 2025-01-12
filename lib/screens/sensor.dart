@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:elementix/screens/history.dart';
 import 'package:elementix/screens/home.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -16,16 +18,21 @@ class _SensorState extends State<Sensor> {
   Map sensorValues = {};
 
   // Getting firebase database instance
-  DatabaseReference sensorCount = FirebaseDatabase.instance.ref('Sensors');
+  DatabaseReference sensorCount = FirebaseDatabase.instance.ref('UsersData');
 
   // Function to get values from Sensors collection
   void getValues() {
+    // log('this is $sensorCount');
     sensorCount.onValue.listen((event) {
-      final data = event.snapshot.value;
-      // log(data.toString());
-      setState(() {
-        sensorValues = data as Map;
-      });
+      final data = event.snapshot.value as Map?;
+      if (data != null && data.isNotEmpty) {
+        final firstRecordKey = data.keys.first; // Get the first record's key
+        final firstRecord = data[firstRecordKey]['Data'] as Map?;
+        setState(() {
+          sensorValues = firstRecord ?? {};
+        });
+        log(firstRecord.toString());
+      }
     });
   }
 
@@ -82,7 +89,7 @@ class _SensorState extends State<Sensor> {
               color: Colors.blue[500],
               child: Center(
                 child: Text(
-                  'Gas Sensor: ${sensorValues['Sensor1']}',
+                  'Gas Sensor: ${sensorValues['Sensor-1']}',
                   style: const TextStyle(
                     fontSize: 24,
                     color: Colors.white,
@@ -96,7 +103,7 @@ class _SensorState extends State<Sensor> {
               color: Colors.green[500],
               child: Center(
                 child: Text(
-                  'Smog Sensor: ${sensorValues['Sensor2']}',
+                  'Smog Sensor: ${sensorValues['Sensor-2']}',
                   style: const TextStyle(
                     fontSize: 24,
                     color: Colors.white,
